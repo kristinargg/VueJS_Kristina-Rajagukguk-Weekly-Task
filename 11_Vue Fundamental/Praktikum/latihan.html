@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latiha Vue Fundamental</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <ol>
+          <li v-for="list in todos">{{ list }}</li>
+        </ol>
+      </div>
+      <input type="text" v-model="todo" />
+      <button @click="addTodo()">Tambahkan</button>
+      <h3 v-if="todos.length >= 4">Hebat!!</h3>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
+      <script>
+        new Vue({
+          el: "#app",
+          data() {
+            return {
+              todos: [],
+              todo: "",
+            };
+          },
+          methods: {
+            addTodo() {
+              this.todos.push(this.todo);
+              this.todo = "";
+            },
+          },
+        });
+      </script>
+    </div>
+  </body>
+</html>
