@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+body{
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    margin: 30px;
+}
+#box .box1{
+    display: flex;
+    margin-bottom: 50px;
+}
+.box-red{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    margin-right: 50px;
+}
+.box-blue{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    padding: 20px;
+}
+.box-green{
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    border-radius: 20px;
+}
