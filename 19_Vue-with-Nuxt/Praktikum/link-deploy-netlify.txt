@@ -1,0 +1,3 @@
+berikut link hasil deploy menggunakan netlify
+
+https://task-vue-with-nuxt.netlify.app/
